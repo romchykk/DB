@@ -65,7 +65,7 @@ erDiagram
     LOAN {
         int loan_id PK
         int student_card_id FK
-        string isbn FK
+        string book_id FK
         date issue_date
         date return_date
     }
@@ -110,7 +110,7 @@ erDiagram
 | :--- | :--- |
 | loan_id (PK) | Унікальний ідентифікатор транзакції видачі |
 | student_card_id (FK) | Студент, який взяв книгу |
-| isbn (FK) | Книга, яку було видано |
+| book_id (FK) | Книга, яку було видано |
 | issue_date | Дата видачі книги |
 | return_date | Дата фактичного повернення книги (може бути порожнім) |
 
